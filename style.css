@@ -17,10 +17,23 @@ header{
     background: #FFFFFF;
     box-shadow: 0px 4px 19px;
 }
-.Logo{
+#Logo{
     position: absolute;
     width: 75px;
     height: 75px;
     left: 120px;
     top: 22px;
+}
+#Logo-txt{
+    position: absolute;
+    width: 130px;
+    height: 44px;
+    left: 214px;
+    top: 38px;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 25px;
+    line-height: 25px;
+    color: #1E1E1E;
 }
