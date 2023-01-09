@@ -2,54 +2,76 @@
     margin: 0;
     padding: 0;
     border: 0;
+    font-family: 'Poppins', sans-serif;
 }
 html{
     font-size: 62.5%;
     scroll-behavior: smooth;
     background-color: #f6f6f6;
 }
+/* Header */
 header{
     position: fixed;
     width: 100%;
     height: 153px;
-    left: 0px;
-    top: 0px;
     background: #FFFFFF;
     box-shadow: 0px 4px 19px #0000000d;
     z-index: 1;
 }
+/* Header Principal */
 .header-content{
-    margin: auto;
+    /* margin: auto; */
+    /* display: inline; */
+    /* padding-top: 38px; */
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    /* text-align: center; */
 }
 #Logo{
-    position: absolute;
-    width: 75px;
-    left: 120px;
-    top: 22px;
+    /* position: absolute; */
+    position: relative;
+    display: inline-block;
+    width: 100%;
+    max-width: 75px;    
+    height: 100%;
+    /* margin: 22px 0 auto 0; */
+    margin-top: 22px;
+    margin-left: 15px;
+    margin-right: 0px;
 }
 #Logo-txt{
-    position: absolute;
-    width: 130px;
-    height: 44px;
-    left: 214px;
-    top: 38px;
+    /* position: absolute; */
+    position: relative;
+    display: inline-block;
+    width: 100%;
+    max-width: 130px;
+    /* max-height: 44px; */
     font-family: 'Poppins';
     font-style: normal;
     font-weight: 700;
     font-size: 25px;
+    text-align: left;
     line-height: 25px;
     color: #1E1E1E;
+    margin-left: 19px;
+    margin-top: 38px;
 }
 #Searchbar{
-    position: absolute;
-    width: 675px;
-    height: 50px;
-    left: 383px;
-    top: 34px;
+    /* position: absolute; */
+    position: relative;
+    display: inline-block;
+    width: 100%;
+    max-width: 675px;
+    height: 100%;
+    max-height: 50px;
     background-color: #f6f6f6;
     border-radius: 5px;
     border-color: none;
     padding: 15px;
+    /* margin: 34px 39px 0px 69px; */
+    margin-top: 34px;
+    margin-left: 19px;
 }
 #Searchbar::placeholder{
     font-family: 'Poppins';
@@ -57,34 +79,73 @@ header{
     color: #d9d9d9;
 }
 #User{
-    position: absolute;
+    /* position: absolute; */
+    position: relative;
+    display: inline-block;
     width: 31.77px;
     height: 31.14px;
-    left: 1097px;
-    top: 43.43px;
+    /* margin: 43.43px 39px 0px 78.43px; */
+    margin-top: 35px;
+    margin-left: 16px;
 }
 #User-txt{
-    position: absolute;
-    width: 74px;
-    height: 22px;
-    left: 1133px;
-    top: 46px;
+    /* position: absolute; */
+    position: relative;
+    display: inline-block;
+    /* width: 74px;
+    height: 22px; */
     font-family: 'Poppins';
-    font-weight: 200;
+    font-weight: 400;
     font-size: 18px;
     line-height: 27px;
+    margin-top: 35px;
+    margin-left: 4.3px;
 }
 #Fav{
-    position: absolute;
-    width: 35px;
-    height: 32px;
-    left: 1223px;
-    top: 43px;
+    /* position: absolute; */
+    position: relative;
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+    max-width: 35px;
+    max-width: 32px;
+    margin-top: 35px;
+    margin-left: 16px;
 }
 #Sacola{
-    position: absolute;
-    width: 43px;
-    height: 32px;
-    left: 1274px;
-    top: 43px;
+    /* position: absolute; */
+    position: relative;
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+    max-width: 43px;
+    max-height: 32px;
+    margin-top: 35px;
+    margin-left: 16px;
+    margin-right: 15px;
+}
+/* Categorias */
+.nav-categorias{
+    font-family: Poppins;
+    /* font-weight: lighter; */
+    text-align: center;
+    margin-top: 15px;
+}
+.nav-categorias a{
+    color: #000;
+    text-decoration: none;
+    font-size: 1.8rem;
+    font-weight: 600;
+    margin: 0 15px 0;
+}
+#outlet{
+    color: #CB333B;
+}
+.nav-categorias a:hover{
+    color: #3b3b3b;
+    text-decoration: underline;
+}
+#outlet:hover{
+    color: #881f24;
+    text-decoration: underline;
 }
