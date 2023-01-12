@@ -11,11 +11,12 @@ html{
 }
 /* Header */
 header{
-    position: fixed;
+    top: 0;
     width: 100%;
-    height: 153px;
+    /* height: 153px; */
     background: #FFFFFF;
     box-shadow: 0px 4px 19px #0000000d;
+    position: fixed;
     z-index: 1;
 }
 /* Header Principal */
@@ -130,13 +131,14 @@ header{
     /* font-weight: lighter; */
     text-align: center;
     margin-top: 15px;
+    margin-bottom: 20px;
 }
 .nav-categorias a{
     color: #000;
     text-decoration: none;
     font-size: 1.8rem;
     font-weight: 600;
-    margin: 0 15px 0;
+    margin: 0 25px 0;
 }
 #outlet{
     color: #CB333B;
@@ -149,3 +151,82 @@ header{
     color: #881f24;
     text-decoration: underline;
 }
+.sliders{
+    margin: 200px auto 0;
+    
+    max-width: 1200px;
+    /* max-height: 250px; */
+    width: 85%;
+    /* height: 85%; */
+    overflow: hidden;
+}
+.slides{
+    width: 400%;
+    /* height: 250px; */
+    display: flex;
+}
+.slides input{
+    display: none;
+}
+.slide{
+    width: 25%;
+    position: relative;
+    
+}
+.slide img{
+    max-width: 1200px;
+    width: 100%;
+    border-radius: 5px;
+}
+.navigation-manual{
+    position: absolute;
+    max-width: 1200px;
+    width: 85%;
+    margin-top: 17px;
+    display: flex;
+    justify-content: center;
+}
+.manual-btn{
+    border-radius: 100px;
+    cursor: pointer;
+    background-color: #d9d9d9;
+    padding: 12px;
+    transition: 600ms;
+}
+.manual-btn:not(:last-child){
+    margin-right: 17px;
+}
+.manual-btn:hover{
+    background-color: #3b3b3b;
+}
+#radio1:checked ~ .first{
+    margin-left: 0;
+}
+#radio2:checked ~ .first{
+    margin-left: -25%;
+}
+/* .navigation-auto{
+    position: absolute;
+    max-width: 1200px;
+    width: 85%;
+    margin-top: 173px;
+    display: flex;
+    justify-content: center;
+
+}
+.navigation-auto div{
+    background-color: #1E1E1E;
+    padding: 12px;
+    border-radius: 100px;
+    cursor: pointer;
+    transition: 600ms;
+}
+.navigation-auto div:not(:last-child){
+    margin-right: 17px;
+}
+#radio1:checked ~ .navigation-auto .auto-btn1{
+    background-color: #1E1E1E;
+}
+#radio2:checked ~ .navigation-auto .auto-btn2{
+    background-color: #1E1E1E;
+} */
