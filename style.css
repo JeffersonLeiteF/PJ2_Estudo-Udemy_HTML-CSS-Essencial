@@ -159,22 +159,6 @@ header{
     width: 85%;
     overflow: hidden;
 }
-/* @media screen and (max-width: 900px) {
-  .sliders {
-   margin-top: 25%;
-  }
-}
-@media screen and (min-width: 1000px) {
-  .sliders {
-   margin-top: 18%;
-  }
-}
-@media screen and (min-width: 1350px) {
-  .sliders {
-   margin-top: 10%;
-  }
-} */
-
 
 .slides{
     width: 400%;
@@ -186,6 +170,7 @@ header{
 .slide{
     width: 25%;
     position: relative;
+    transition: 600ms ease-in-out;
 }
 .slide img{
     max-width: 1200px;
@@ -205,21 +190,7 @@ header{
    margin-top: 275px;
   }
 }
-/* .manual-btn{
-    border-radius: 100px;
-    cursor: pointer;
-    background-color: #d9d9d9;
-    padding: 12px;
-    width: 22px;
-    height: 22px;
-    transition: 600ms;
-}
-.manual-btn:not(:last-child){
-    margin-right: 17px;
-}
-.manual-btn:hover{
-    background-color: #3b3b3b;
-} */
+
 .manual-btn1, .manual-btn2, .manual-btn3{
     border-radius: 100px;
     cursor: pointer;
