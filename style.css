@@ -13,43 +13,31 @@ html{
 header{
     top: 0;
     width: 100%;
-    /* height: 153px; */
     background: #FFFFFF;
     box-shadow: 0px 4px 19px #0000000d;
-    /* position: fixed; */
     position: sticky;
     padding-bottom: 2px;
     z-index: 99999;
 }
 /* Header Principal */
 .header-content{
-    /* margin: auto; */
-    /* display: inline; */
-    /* padding-top: 38px; */
     align-items: center;
     display: flex;
     justify-content: center;
-    /* text-align: center; */
 }
 #Logo{
-    /* position: absolute; */
     position: relative;
-    /* display: inline-block; */
     width: 100%;
     max-width: 75px;    
     height: 100%;
-    /* margin: 22px 0 auto 0; */
     margin-top: 22px;
     margin-left: 15px;
     margin-right: 0px;
 }
 #Logo-txt{
-    /* position: absolute; */
     position: relative;
-    /* display: inline-block; */
     width: 100%;
     max-width: 130px;
-    /* max-height: 44px; */
     font-family: 'Poppins';
     font-style: normal;
     font-weight: 700;
@@ -61,9 +49,7 @@ header{
     margin-top: 38px;
 }
 #Searchbar{
-    /* position: absolute; */
     position: relative;
-    /* display: inline-block; */
     width: 100%;
     max-width: 675px;
     height: 100%;
@@ -72,7 +58,6 @@ header{
     border-radius: 5px;
     border-color: none;
     padding: 15px;
-    /* margin: 34px 39px 0px 69px; */
     margin-top: 34px;
     margin-left: 19px;
 }
@@ -82,21 +67,14 @@ header{
     color: #d9d9d9;
 }
 #User{
-    /* position: absolute; */
     position: relative;
-    /* display: inline-block; */
     width: 31.77px;
     height: 31.14px;
-    /* margin: 43.43px 39px 0px 78.43px; */
     margin-top: 35px;
     margin-left: 16px;
 }
 #User-txt{
-    /* position: absolute; */
     position: relative;
-    /* display: inline-block; */
-    /* width: 74px;
-    height: 22px; */
     font-family: 'Poppins';
     font-weight: 400;
     font-size: 18px;
@@ -105,9 +83,7 @@ header{
     margin-left: 4.3px;
 }
 #Fav{
-    /* position: absolute; */
     position: relative;
-    /* display: inline-block; */
     width: 100%;
     height: 100%;
     max-width: 35px;
@@ -116,9 +92,7 @@ header{
     margin-left: 16px;
 }
 #Sacola{
-    /* position: absolute; */
     position: relative;
-    /* display: inline-block; */
     width: 100%;
     height: 100%;
     max-width: 43px;
@@ -130,7 +104,6 @@ header{
 /* Categorias */
 .nav-categorias{
     font-family: Poppins;
-    /* font-weight: lighter; */
     text-align: center;
     margin-top: 15px;
     margin-bottom: 15px;
@@ -141,6 +114,7 @@ header{
     font-size: 1.8rem;
     font-weight: 600;
     margin: 0 25px 0;
+    
 }
 #outlet{
     color: #CB333B;
@@ -159,7 +133,6 @@ header{
     width: 85%;
     overflow: hidden;
 }
-
 .slides{
     width: 400%;
     display: flex;
@@ -222,4 +195,80 @@ header{
 }
 #radio3:checked ~ .navigation-manual .manual-btn3{
     background-color: #1E1E1E;
+}
+.pSlider{
+    background-color: #FFFFFF;
+    border-radius: 5px;
+    max-width: 1200px;
+    width: 85%;
+    margin: 68px auto 0;
+    padding-top: 0.1px;
+    text-align: center;
+}
+.pSlider h1{
+    font-family: 'Poppins';
+    font-size: 3.5rem;
+    line-height: 52.2px;
+    margin: 37px 0 46px;
+}
+/* Carrossel de Produtos */
+.Carrossel{
+    display: flex;
+    overflow: hidden;
+}
+.cProduct{
+    /* max-width: 250px;
+    max-height: 447px; */
+    width: 200px;
+    height: 447px;
+    /* padding: 5px; */
+    margin-left: 80px;
+    margin-bottom: 27px;
+}
+.cProduct img{
+    max-width: 200px;
+    width: 100%;
+}
+.pNome{
+    font-family: 'Poppins';
+    font-size: 1.8rem;
+    text-align: left;
+    font-weight: 600;
+}
+.pMarca{
+    font-family: 'Poppins';
+    font-size: 1.8rem;
+    text-align: left;
+    font-weight: 400;
+    text-decoration: underline;
+    margin-top: -5px;
+}
+.pPrice{
+    font-family: 'Poppins';
+    font-size: 3rem;
+    text-align: left;
+    font-weight: 700;
+    margin-top: -10px;
+}
+.pParcel{
+    font-family: 'Poppins';
+    font-size: 1.8rem;
+    text-align: left;
+    font-weight: 400;
+    margin-bottom: 16px;
+    margin-top: -10px;
+}
+.pCTA{
+    background-color: #00903E;
+    padding: 12px 57px;
+    color: #D9D9D9;
+    font-family: 'Poppins';
+    font-size: 18px;
+    font-weight: 700;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: 600ms ease-in-out;
+}
+.pCTA:hover{
+    background-color: #005022;
 }
