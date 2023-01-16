@@ -224,6 +224,7 @@ header{
     /* padding: 5px; */
     margin-left: 80px;
     margin-bottom: 27px;
+    display: inline-block;
 }
 .cProduct img{
     max-width: 200px;
