@@ -313,3 +313,39 @@ header{
 .prev:hover, .next:hover{
     opacity: 1;
 }
+/* Blog */
+.Blog-Container{
+    margin-top: 68px;
+    background-color: #D9D9D9;
+    max-height: 572px;
+    height: 100%;
+    width: 100%;
+    display: flex;
+}
+.Blog-TXT{
+    max-width: 668px;
+    width: 100%;
+    text-align: center;
+    display: inline;
+}
+.Blog-TXT h1{
+    font-family: 'Poppins';
+    font-size: 3.5rem;
+    font-weight: 700;
+    line-height: 5.2rem;
+    text-align: left;
+}
+.Blog-TXT p{
+    font-family: 'Poppins';
+    font-size: 1.3rem;
+    font-weight: 400;
+    line-height: 2rem;
+    text-align: left;
+}
+.Blog-TXT a{
+    color: #000;
+    font-family: 'Poppins';
+    font-size: 2.5rem;
+    font-weight: 700;
+    text-decoration: none;
+}
