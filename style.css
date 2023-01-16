@@ -201,9 +201,12 @@ header{
     border-radius: 5px;
     max-width: 1200px;
     width: 85%;
+    /* max-height: 610px; */
+    height: 610px;
     margin: 68px auto 0;
     padding-top: 0.1px;
     text-align: center;
+    position: relative;
 }
 .pSlider h1{
     font-family: 'Poppins';
@@ -213,11 +216,16 @@ header{
 }
 /* Carrossel de Produtos */
 .Carrossel{
+    position: relative;
+    /* width: 1000px; */
+    margin: 0 auto;
     display: flex;
+    /* justify-content: center; */
     overflow: hidden;
     transition-property: scroll-left;
     transition-duration: 600ms;
     transition-timing-function: ease-in-out;
+    z-index: 0;
 }
 .cProduct{
     /* max-width: 250px;
@@ -225,9 +233,11 @@ header{
     width: 200px;
     height: 447px;
     /* padding: 5px; */
-    margin-left: 80px;
-    margin-bottom: 27px;
+    margin: 0 40px 27px;
     display: inline-block;
+}
+.cProduct:first-child{
+    margin-left: 80px;
 }
 .cProduct:last-child{
     margin-right: 80px;
@@ -279,13 +289,27 @@ header{
 .pCTA:hover{
     background-color: #005022;
 }
-.prev {
+
+.next, .prev {
+    cursor: pointer;
     position: absolute;
-    font-size: 1.6rem;
-    left: 0;    
+    height: 100%;
+    width: 10vh;
+    top: 50%;
+    transform: translateY(-50%);
+    border: none;
+    z-index: 1;
+    opacity: 0.05;
+    transition: 600ms;
+}
+.prev {
+    left: 0;
+    background: linear-gradient(to right, #FFFFFF, transparent);
 }
 .next {
-    position: absolute;
-    font-size: 2rem;
     right: 0;
+    background: linear-gradient(to left, #FFFFFF, transparent);
+}
+.prev:hover, .next:hover{
+    opacity: 1;
 }

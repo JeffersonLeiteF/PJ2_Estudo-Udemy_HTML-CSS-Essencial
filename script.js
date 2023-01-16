@@ -29,3 +29,14 @@ prev.addEventListener("click", function () {
     behavior: "smooth"
   });
 });
+
+/* var carousel = document.querySelector(".Carrossel");
+var next = document.querySelector(".next");
+var prev = document.querySelector(".prev");
+
+next.addEventListener("click", function () {
+  carousel.scrollLeft += carousel.offsetWidth;
+});
+prev.addEventListener("click", function () {
+  carousel.scrollLeft -= carousel.offsetWidth;
+}); */
