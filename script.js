@@ -12,3 +12,14 @@ function nextImage(){
     }    
 document.getElementById("radio"+count).checked = true;
 }
+
+var carousel = document.querySelector(".Carrossel");
+var next = document.querySelector(".next");
+var prev = document.querySelector(".prev");
+
+next.addEventListener("click", function () {
+  carousel.scrollLeft += carousel.offsetWidth;
+});
+prev.addEventListener("click", function () {
+  carousel.scrollLeft -= carousel.offsetWidth;
+});

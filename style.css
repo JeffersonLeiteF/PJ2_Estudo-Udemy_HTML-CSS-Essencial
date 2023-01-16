@@ -273,3 +273,18 @@ header{
 .pCTA:hover{
     background-color: #005022;
 }
+.prev {
+    /* position: absolute; */
+    color: blue;
+    font-size: 1.6rem;
+    left: 2%;
+    background-color: none;
+}
+
+.next {
+    /* position: absolute; */
+    color: red;
+    font-size: 2rem;
+    right: 2%;
+    background-color: none;
+}
