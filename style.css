@@ -201,8 +201,8 @@ header{
     border-radius: 5px;
     max-width: 1200px;
     width: 85%;
-    /* max-height: 610px; */
-    height: 610px;
+    max-height: 610px;
+    height: 100%;
     margin: 68px auto 0;
     padding-top: 0.1px;
     text-align: center;
