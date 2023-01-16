@@ -215,6 +215,9 @@ header{
 .Carrossel{
     display: flex;
     overflow: hidden;
+    transition-property: scroll-left;
+    transition-duration: 600ms;
+    transition-timing-function: ease-in-out;
 }
 .cProduct{
     /* max-width: 250px;
@@ -225,6 +228,9 @@ header{
     margin-left: 80px;
     margin-bottom: 27px;
     display: inline-block;
+}
+.cProduct:last-child{
+    margin-right: 80px;
 }
 .cProduct img{
     max-width: 200px;
@@ -275,16 +281,11 @@ header{
 }
 .prev {
     position: absolute;
-    color: blue;
     font-size: 1.6rem;
-    left: 2%;
-    background-color: none;
+    left: 0;    
 }
-
 .next {
     position: absolute;
-    color: red;
     font-size: 2rem;
-    right: 2%;
-    background-color: none;
+    right: 0;
 }

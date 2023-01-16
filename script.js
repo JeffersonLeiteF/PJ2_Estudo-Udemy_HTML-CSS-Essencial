@@ -18,8 +18,14 @@ var next = document.querySelector(".next");
 var prev = document.querySelector(".prev");
 
 next.addEventListener("click", function () {
-  carousel.scrollLeft += carousel.offsetWidth;
+  carousel.scrollTo({
+    left: carousel.scrollLeft + carousel.offsetWidth,
+    behavior: "smooth"
+  });
 });
 prev.addEventListener("click", function () {
-  carousel.scrollLeft -= carousel.offsetWidth;
+  carousel.scrollTo({
+    left: carousel.scrollLeft - carousel.offsetWidth,
+    behavior: "smooth"
+  });
 });
