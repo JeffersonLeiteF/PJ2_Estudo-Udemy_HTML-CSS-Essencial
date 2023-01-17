@@ -1,3 +1,4 @@
+//Animação automática dos banners
 let count = 1;
 document.getElementById("radio1").checked = true;
 
@@ -13,6 +14,7 @@ function nextImage(){
 document.getElementById("radio"+count).checked = true;
 }
 
+//Animação slider dos produtos
 var carousel = document.querySelector(".Carrossel");
 var next = document.querySelector(".next");
 var prev = document.querySelector(".prev");
@@ -29,14 +31,3 @@ prev.addEventListener("click", function () {
     behavior: "smooth"
   });
 });
-
-/* var carousel = document.querySelector(".Carrossel");
-var next = document.querySelector(".next");
-var prev = document.querySelector(".prev");
-
-next.addEventListener("click", function () {
-  carousel.scrollLeft += carousel.offsetWidth;
-});
-prev.addEventListener("click", function () {
-  carousel.scrollLeft -= carousel.offsetWidth;
-}); */

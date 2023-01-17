@@ -289,12 +289,11 @@ header{
 .pCTA:hover{
     background-color: #005022;
 }
-
 .next, .prev {
     cursor: pointer;
     position: absolute;
     height: 100%;
-    width: 10vh;
+    width: 6rem;
     top: 50%;
     transform: translateY(-50%);
     border: none;
@@ -317,10 +316,30 @@ header{
 .Blog-Container{
     margin-top: 68px;
     background-color: #D9D9D9;
-    max-height: 572px;
-    height: 100%;
+    /* max-height: 572px;
+    height: 100%; */
     width: 100%;
+    padding-top: 86px;
+    padding-bottom: 86px;
+}
+.Blog-Wrapper{
     display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+    max-width: 1200px;
+    width: 85%;
+    /* flex-wrap: wrap; */ /* Usar no media query */
+}
+.Blog-Img img{
+    max-width: 350px;
+    /* width: 100%; */
+    border-radius: 5px;
+    margin-right: 75px;
+}
+.Blog-Line{
+    margin-right: 75px;    
 }
 .Blog-TXT{
     max-width: 668px;
@@ -334,13 +353,17 @@ header{
     font-weight: 700;
     line-height: 5.2rem;
     text-align: left;
+    margin-bottom: 32px;
 }
 .Blog-TXT p{
     font-family: 'Poppins';
-    font-size: 1.3rem;
+    font-size: 1.8rem;
     font-weight: 400;
-    line-height: 2rem;
+    line-height: 2.7rem;
     text-align: left;
+    max-width: 668px;
+    width: 100%;
+    margin-bottom: 47px;
 }
 .Blog-TXT a{
     color: #000;
@@ -348,4 +371,90 @@ header{
     font-size: 2.5rem;
     font-weight: 700;
     text-decoration: none;
+    transition: all 600ms;
+}
+.Blog-TXT a:hover{
+    color: #3b3b3b;
+    text-decoration: underline;
+}
+/* Formulário */
+.Form-Container{
+    text-align: center;
+    margin-top: 68px;
+}
+.Form-Wrapper{
+    justify-content: center;
+    align-items: center;
+    max-width: 1200px;
+    width: 85%;
+    gap: 8px;
+    display: inline-flex;
+    /* flex-wrap: wrap; */
+}
+.Form-Tittle{
+    color: #000;
+    font-family: 'Poppins';
+    font-size: 2.5rem;
+    font-weight: 700;
+    line-height: 3.7rem;
+    margin-bottom: 1.6rem;
+}
+.Form-Name, .Form-Email{
+    background-color: #f6f6f6;
+    padding-top: 15px;
+    padding-bottom: 10px;
+    padding-left: 15px;
+    border: 0.1rem solid #1E1E1E;
+    border-radius: 5px;
+    max-width: 341px;
+    max-height: 50px;
+    width: 100%;
+    height: 100%;
+    line-height: 50px;
+}
+.Form-Name::placeholder, .Form-Email::placeholder{
+    font-family: 'Poppins';
+    font-size: 1.8rem;
+    color: #d9d9d9;
+    font-weight: 700;
+}
+.Form-Button{
+    padding: 12px 50px;
+    background-color: #00903E;
+    color: #d9d9d9;
+    font-family: 'Poppins';
+    font-size: 1.8rem;
+    font-weight: 700;
+    /* line-height: 2.7rem; */
+    transition: 600ms;
+    border-radius: 5px;
+    cursor: pointer;
+    max-height: 50px;
+    height: 100%;
+}
+.Form-Button:hover{
+    background-color: #005022;
+}
+/* Footer */
+.Footer-Container{
+    background-color: #1E1E1E;
+    text-align: center;
+    padding: 20px;
+    margin-top: 68px;
+}
+.Footer-Container h2, .Footer-Container h3{
+    color: #f6f6f6;
+}
+.Footer-Tittle{
+    font-family: 'Poppins';
+    font-size: 2rem;
+    font-weight: 700;
+    line-height: 2.7rem;
+    margin-bottom: 6px;
+}
+.Footer-Container h3{
+    font-family: 'Poppins';
+    font-size: 1.8rem;
+    font-weight: 400;
+    line-height: 2.7rem;
 }
