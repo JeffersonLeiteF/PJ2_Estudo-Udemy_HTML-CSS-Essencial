@@ -400,6 +400,7 @@ header{
     margin-bottom: 1.6rem;
 }
 .Form-Name, .Form-Email{
+    box-sizing: border-box;
     background-color: #f6f6f6;
     padding-top: 15px;
     padding-bottom: 10px;
@@ -419,6 +420,7 @@ header{
     font-weight: 700;
 }
 .Form-Button{
+    box-sizing: border-box;
     padding: 12px 50px;
     background-color: #00903E;
     color: #d9d9d9;
