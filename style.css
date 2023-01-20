@@ -219,13 +219,15 @@ header{
     position: relative;
     /* width: 1000px; */
     margin: 0 auto;
+    gap: 40px;
     display: flex;
     /* justify-content: center; */
     overflow: hidden;
     transition-property: scroll-left;
     transition-duration: 600ms;
     transition-timing-function: ease-in-out;
-    z-index: 0;
+    /* z-index: 0; */
+   /*  padding-bottom: 27px; */
 }
 .cProduct{
     /* max-width: 250px;
@@ -233,7 +235,7 @@ header{
     width: 200px;
     height: 447px;
     /* padding: 5px; */
-    margin: 0 40px;
+    /* margin: 0 40px; */
     display: inline-block;
 }
 .cProduct:first-child{
@@ -504,5 +506,32 @@ header{
         gap: 8px;
         display: inline-flex;
         flex-wrap: wrap;
+    }
+}
+@media (max-width: 450px){
+    .pSlider h1{
+        font-family: 'Poppins';
+        font-size: 2.5rem;
+        line-height: 3rem;
+        margin: 37px 5px 46px;
+    }
+    .cProduct:first-child{
+        margin-left: 40px;
+    }
+    .cProduct:last-child{
+        margin-right: 40px;
+    }
+    .next, .prev {
+        cursor: pointer;
+        position: absolute;
+        height: 100%;
+        width: 3rem;
+        top: 50%;
+        transform: translateY(-50%);
+        border: none;
+        z-index: 1;
+        opacity: 0.05;
+        transition: 600ms;
+        /* scale: 50%; */
     }
 }
