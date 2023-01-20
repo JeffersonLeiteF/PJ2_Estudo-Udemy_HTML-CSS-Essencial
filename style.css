@@ -29,7 +29,7 @@ header{
     position: relative;
     width: 100%;
     max-width: 75px;    
-    height: 100%;
+    /* height: 100%; */
     margin-top: 22px;
     margin-left: 15px;
     margin-right: 0px;
@@ -104,9 +104,16 @@ header{
 /* Categorias */
 .nav-categorias{
     font-family: Poppins;
-    text-align: center;
+    /* text-align: center; */
     margin-top: 15px;
     margin-bottom: 15px;
+    /* display: flex; */
+}
+.nav-categorias nav ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    flex-wrap: wrap;
 }
 .nav-categorias a{
     color: #000;
@@ -114,8 +121,10 @@ header{
     font-size: 1.8rem;
     font-weight: 600;
     margin: 0 25px 0;
-    
 }
+/* .nav-item{
+    display: inline-block;
+} */
 #outlet{
     color: #CB333B;
 }
