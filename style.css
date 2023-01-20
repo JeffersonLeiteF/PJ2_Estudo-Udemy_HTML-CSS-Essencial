@@ -462,6 +462,7 @@ header{
     font-weight: 400;
     line-height: 2.7rem;
 }
+/* Responsivo */
 @media (max-width: 1000px){
     .Blog-Img, .Blog-Line{
         display: none;
@@ -472,7 +473,8 @@ header{
         font-weight: 700;
         line-height: 5.2rem;
         text-align: center;
-        margin-bottom: 32px;
+        /* margin-bottom: 32px; */
+        margin: 0 10px 32px;
     }
     .Blog-TXT p{
         font-family: 'Poppins';
@@ -506,6 +508,9 @@ header{
         gap: 8px;
         display: inline-flex;
         flex-wrap: wrap;
+    }
+    .Form-Tittle{
+        margin: 0 10px 32px;
     }
 }
 @media (max-width: 450px){
