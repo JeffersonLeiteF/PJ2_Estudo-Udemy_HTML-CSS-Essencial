@@ -104,12 +104,7 @@ header{
 /* Categorias */
 .nav-categorias{
     font-family: Poppins;
-    /* text-align: center; */
-    /* margin-top: 15px;
-    margin-bottom: 15px; */
     margin: 15px 10px 15px;
-    
-    /* display: flex; */
 }
 .nav-categorias nav ul {
     display: flex;
@@ -123,13 +118,9 @@ header{
     text-decoration: none;
     font-size: 1.8rem;
     font-weight: 600;
-    /* margin: 0 2rem 0; */
     display: block;
     padding: .5rem;
 }
-/* .nav-item{
-    display: inline-block;
-} */
 #outlet{
     color: #CB333B;
 }
@@ -507,6 +498,23 @@ header{
         font-weight: 700;
         text-decoration: none;
         transition: all 600ms;
+    }
+}
+@media (max-width: 655px){
+    .header-content{
+        flex-wrap: wrap;
+    }
+    #User-txt, #User, #Fav, #Sacola{
+        display: none;
+    }
+    #Searchbar{
+        width: 85%;
+        max-width: 400px;
+        margin-bottom: 15px;
+        margin: 34px 19px 15px;
+    }
+    .nav-categorias{
+        display: none;
     }
 }
 @media (max-width: 600px){
