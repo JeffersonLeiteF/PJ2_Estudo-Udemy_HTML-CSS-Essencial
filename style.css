@@ -233,7 +233,7 @@ header{
     width: 200px;
     height: 447px;
     /* padding: 5px; */
-    margin: 0 40px 27px;
+    margin: 0 40px;
     display: inline-block;
 }
 .cProduct:first-child{
@@ -459,4 +459,50 @@ header{
     font-size: 1.8rem;
     font-weight: 400;
     line-height: 2.7rem;
+}
+@media (max-width: 1000px){
+    .Blog-Img, .Blog-Line{
+        display: none;
+    }
+    .Blog-TXT h1{
+        font-family: 'Poppins';
+        font-size: 3.5rem;
+        font-weight: 700;
+        line-height: 5.2rem;
+        text-align: center;
+        margin-bottom: 32px;
+    }
+    .Blog-TXT p{
+        font-family: 'Poppins';
+        font-size: 1.8rem;
+        font-weight: 400;
+        line-height: 2.7rem;
+        text-align: left;
+        max-width: 668px;
+        width: 100%;
+        margin-bottom: 47px;
+    }
+    .Blog-TXT a{
+        color: #000;
+        font-family: 'Poppins';
+        font-size: 2.5rem;
+        font-weight: 700;
+        text-decoration: none;
+        transition: all 600ms;
+    }
+}
+@media (max-width: 600px){
+    .Form-Container{
+        text-align: center;
+        margin-top: 68px;
+    }
+    .Form-Wrapper{
+        justify-content: center;
+        align-items: center;
+        max-width: 1200px;
+        width: 85%;
+        gap: 8px;
+        display: inline-flex;
+        flex-wrap: wrap;
+    }
 }
