@@ -105,8 +105,10 @@ header{
 .nav-categorias{
     font-family: Poppins;
     /* text-align: center; */
-    margin-top: 15px;
-    margin-bottom: 15px;
+    /* margin-top: 15px;
+    margin-bottom: 15px; */
+    margin: 15px 10px 15px;
+    
     /* display: flex; */
 }
 .nav-categorias nav ul {
@@ -114,13 +116,16 @@ header{
     justify-content: center;
     list-style: none;
     flex-wrap: wrap;
+    column-gap: 2.5rem;
 }
 .nav-categorias a{
     color: #000;
     text-decoration: none;
     font-size: 1.8rem;
     font-weight: 600;
-    margin: 0 25px 0;
+    /* margin: 0 2rem 0; */
+    display: block;
+    padding: .5rem;
 }
 /* .nav-item{
     display: inline-block;
