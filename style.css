@@ -518,6 +518,7 @@ header{
     }
     #Menu-Mobile{
         display: block;
+        right: 0;
         margin: 34px auto 0;
         padding: 5px;
         background: none;
@@ -535,11 +536,23 @@ header{
     }
     header.menu-active .nav-categorias {
         display: flex;
+        margin: 15px auto 10px;
         width: 100%;
         top: 100px;
+        text-align: center;
+    }
+    header.menu-active .nav-categorias li{
+        padding: 5px;
+        width: 100vw;
     }
     header.menu-active #Searchbar {
         display: none;
+    }
+    header.menu-active #User-txt, header.menu-active #User, header.menu-active #Fav, header.menu-active #Sacola{
+        display: flex;
+        padding: 5px;
+        margin: 0;
+        gap: 16px;
     }
 }
 @media (max-width: 600px){
