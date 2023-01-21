@@ -34,10 +34,12 @@ prev.addEventListener("click", function () {
 
 //Menu Hamburger
 const MenuMobile = document.getElementById('Menu-Mobile');
+const header = document.querySelector('header');
 
 function toggleMenu() {
-  const nav = document.getElementById('nav');
-  nav.classList.toggle('active');
+  const nav = document.querySelector('.nav-categorias');
+  /* nav.classList.toggle('active'); */
+  header.classList.toggle('menu-active');
 }
 
 MenuMobile.addEventListener('click', toggleMenu);

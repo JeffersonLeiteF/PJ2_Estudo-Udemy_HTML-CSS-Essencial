@@ -121,7 +121,7 @@ header{
     text-decoration: none;
     font-size: 1.8rem;
     font-weight: 600;
-    display: block;
+    /* display: block; */
     padding: .5rem;
 }
 #outlet{
@@ -528,10 +528,17 @@ header{
     #Searchbar{
         width: 85%;
         max-width: 400px;
-        /* margin-bottom: 15px; */
         margin: 34px 19px 15px;
     }
     .nav-categorias{
+        display: none;  
+    }
+    header.menu-active .nav-categorias {
+        display: flex;
+        width: 100%;
+        top: 100px;
+    }
+    header.menu-active #Searchbar {
         display: none;
     }
 }
