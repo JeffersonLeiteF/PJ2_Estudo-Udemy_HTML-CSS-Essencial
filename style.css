@@ -48,6 +48,9 @@ header{
     margin-left: 19px;
     margin-top: 38px;
 }
+#Menu-Mobile{
+    display: none;
+}
 #Searchbar{
     position: relative;
     width: 100%;
@@ -513,10 +516,19 @@ header{
     #Logo-txt{
         margin-right: auto;
     }
+    #Menu-Mobile{
+        display: block;
+        margin: 34px auto 0;
+        padding: 5px;
+        background: none;
+        font-family: 'Poppins';
+        font-size: 1.6rem;
+        font-weight: 500;
+    }
     #Searchbar{
         width: 85%;
         max-width: 400px;
-        margin-bottom: 15px;
+        /* margin-bottom: 15px; */
         margin: 34px 19px 15px;
     }
     .nav-categorias{

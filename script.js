@@ -31,3 +31,13 @@ prev.addEventListener("click", function () {
     behavior: "smooth"
   });
 });
+
+//Menu Hamburguer
+const MenuMobile = document.getElementById('Menu-Mobile');
+
+function toggleMenu() {
+  const nav = document.getElementById('nav');
+  nav.classList.toggle('active');
+}
+
+MenuMobile.addEventListener('click', toggleMenu);
