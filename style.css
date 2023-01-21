@@ -507,6 +507,12 @@ header{
     #User-txt, #User, #Fav, #Sacola{
         display: none;
     }
+    #Logo{
+        margin-left: auto;
+    }
+    #Logo-txt{
+        margin-right: auto;
+    }
     #Searchbar{
         width: 85%;
         max-width: 400px;
