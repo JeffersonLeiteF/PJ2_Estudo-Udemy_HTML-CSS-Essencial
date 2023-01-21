@@ -32,7 +32,7 @@ prev.addEventListener("click", function () {
   });
 });
 
-//Menu Hamburguer
+//Menu Hamburger
 const MenuMobile = document.getElementById('Menu-Mobile');
 
 function toggleMenu() {
