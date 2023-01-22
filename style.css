@@ -69,41 +69,52 @@ header{
     font-size: 1.6rem;
     color: #d9d9d9;
 }
-#User{
+.header-content-right{
+    display: flex;
     position: relative;
+    justify-content: center;
+    align-items: center;
+    margin: 35px 16px 0;
+    /* padding: 15px; */
+    /* gap: 16px; */
+    width: 100%;
+    max-width: 220px;
+}
+#User{
+    /* position: relative; */
     width: 31px;
     /* height: 31px; */
-    margin-top: 35px;
-    margin-left: 16px;
-
+    /* margin-top: 35px; */
+    margin-right: 5px;
 }
 #User-txt{
-    position: relative;
+    /* position: relative; */
     font-family: 'Poppins';
     font-weight: 400;
-    font-size: 18px;
-    line-height: 27px;
+    font-size: 1.8rem;
+    /* line-height: 27px;
     margin-top: 35px;
-    margin-left: 4.3px;
+    margin-left: 4.3px; */
+    margin-right: 16px;
 }
 #Fav{
-    position: relative;
+    /* position: relative; */
     width: 100%;
-    height: 100%;
-    max-width: 35px;
+    /* height: 100%; */
     max-width: 32px;
-    margin-top: 35px;
-    margin-left: 16px;
+    /* margin-top: 35px;
+    margin-left: 16px; */
+    margin-right: 16px;
 }
 #Sacola{
-    position: relative;
+    /* position: relative; */
     width: 100%;
     height: 100%;
     max-width: 43px;
     max-height: 32px;
-    margin-top: 35px;
+    /* margin-top: 35px;
     margin-left: 16px;
-    margin-right: 15px;
+    margin-right: 15px; */
 }
 /* Categorias */
 .nav-categorias{
@@ -508,7 +519,7 @@ header{
     .header-content{
         flex-wrap: wrap;
     }
-    #User-txt, #User, #Fav, #Sacola{
+    .header-content-right{
         display: none;
     }
     #Logo{
@@ -530,14 +541,14 @@ header{
     #Searchbar{
         width: 85%;
         max-width: 400px;
-        margin: 34px 19px 15px;
+        margin: 25px 19px 15px;
     }
     .nav-categorias{
         display: none;  
     }
     header.menu-active .nav-categorias {
         display: flex;
-        margin: 15px auto 10px;
+        margin: 0 auto 10px;
         width: 100%;
         top: 100px;
         text-align: center;
@@ -549,25 +560,15 @@ header{
     header.menu-active #Searchbar {
         display: none;
     }
-    header.menu-active #User-txt, header.menu-active #User, header.menu-active #Fav, header.menu-active #Sacola{
+    header.menu-active .header-content-right{
         display: flex;
-        align-self: flex-end;
-        padding: 5px;
-        margin: 50px auto 0;
-        gap: 16px;
+        justify-content: center;
+        align-items: center;
+        margin: 0 100% 0;
+        margin-top: 15px;
+        margin-bottom: 15px;
+        padding: 0;
     }
-    /* header.menu-active #User{
-        order: 3;
-    }
-    header.menu-active #User-txt{
-        order: 4;
-    }
-    header.menu-active #Fav{
-        order: 5;
-    }
-    header.menu-active #Sacola{
-        order: 6;
-    } */
 }
 @media (max-width: 600px){
     .Form-Container{
