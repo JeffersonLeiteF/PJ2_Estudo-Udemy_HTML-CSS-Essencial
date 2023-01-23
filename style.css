@@ -216,6 +216,31 @@ header{
 #radio3:checked ~ .navigation-manual .manual-btn3{
     background-color: #1E1E1E;
 }
+/* Banners Mobile */
+.sliders-m{
+    margin: 35px auto 0;
+    max-width: 600px;
+    width: 85%;
+    overflow: hidden;
+}
+.slides-m{
+    width: 400%;
+    
+    display: none;
+}
+.slides-m input{
+    display: none;
+}
+.slide-m{
+    width: 25%;
+    position: relative;
+    transition: 600ms ease-in-out;
+}
+.slide-m img{
+    max-width: 1200px;
+    width: 100%;
+    border-radius: 5px;
+}
 .pSlider{
     background-color: #FFFFFF;
     border-radius: 5px;
@@ -568,6 +593,12 @@ header{
         margin-top: 15px;
         margin-bottom: 15px;
         padding: 0;
+    }
+    .sliders{
+        display: none;
+    }
+    .slides-m{
+        display: flex;
     }
 }
 @media (max-width: 600px){

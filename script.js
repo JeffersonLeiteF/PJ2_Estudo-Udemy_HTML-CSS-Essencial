@@ -38,7 +38,6 @@ const header = document.querySelector('header');
 
 function toggleMenu() {
   const nav = document.querySelector('.nav-categorias');
-  /* nav.classList.toggle('active'); */
   header.classList.toggle('menu-active');
 }
 
