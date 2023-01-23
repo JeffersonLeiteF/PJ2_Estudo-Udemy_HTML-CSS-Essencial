@@ -263,22 +263,22 @@ header{
 .manual-btn1-m:hover, .manual-btn2-m:hover, .manual-btn3-m:hover{
     background-color: #3b3b3b;
 }
-#radio1-m:checked ~ .first{
+#radio-m1:checked ~ .first{
     margin-left: 0;
 }
-#radio2-m:checked ~ .first{
+#radio-m2:checked ~ .first{
     margin-left: -25%;
 }
-#radio3-m:checked ~ .first{
+#radio-m3:checked ~ .first{
     margin-left: -50%;
 }
-#radio1-m:checked ~ .navigation-manual-m .manual-btn1-m{
+#radio-m1:checked ~ .navigation-manual-m .manual-btn1-m{
     background-color: #1E1E1E;
 }
-#radio2-m:checked ~ .navigation-manual-m .manual-btn2-m{
+#radio-m2:checked ~ .navigation-manual-m .manual-btn2-m{
     background-color: #1E1E1E;
 }
-#radio3-m:checked ~ .navigation-manual-m .manual-btn3-m{
+#radio-m3:checked ~ .navigation-manual-m .manual-btn3-m{
     background-color: #1E1E1E;
 }
 /* Carrossel Produtos */
