@@ -14,6 +14,22 @@ function nextImage(){
 document.getElementById("radio"+count).checked = true;
 }
 
+//Animação automática dos banners mobile
+let countm = 1;
+document.getElementById("radio-m1").checked = true;
+
+setInterval( function(){
+    nextImageM();
+}, 10000)
+
+function nextImageM(){
+    countm++;
+    if(countm>3){
+        countm = 1;
+    }
+document.getElementById("radio-m"+countm).checked = true;
+}
+
 //Animação slider dos produtos
 var carousel = document.querySelector(".Carrossel");
 var next = document.querySelector(".next");
@@ -38,7 +54,6 @@ const header = document.querySelector('header');
 
 function toggleMenu() {
   const nav = document.querySelector('.nav-categorias');
-  /* nav.classList.toggle('active'); */
   header.classList.toggle('menu-active');
 }
 
