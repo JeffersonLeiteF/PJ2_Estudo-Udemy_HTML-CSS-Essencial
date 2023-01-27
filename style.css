@@ -629,18 +629,18 @@ header{
         margin: 25px 19px 15px;
     }
     .nav-categorias{
-        display: none;  
+        display: none;
     }
     header.menu-active .nav-categorias {
         display: flex;
         margin: 0 auto 10px;
         width: 100%;
         top: 100px;
-        text-align: right;
+        text-align: right;        
     }
     header.menu-active .nav-categorias li{
         padding: 5px;
-        width: 90vw;
+        width: 90vw;   
     }
     header.menu-active .nav-categorias a {
         font-size: 2rem;
@@ -669,6 +669,9 @@ header{
     }
     .slides-m{
         display: flex;
+    }
+    .Carrossel{
+        overflow-x: auto;
     }
 }
 @media (max-width: 600px){
