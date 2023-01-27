@@ -25,17 +25,24 @@ header{
     display: flex;
     justify-content: center;
 }
-#Logo{
+.Logo-Group{
+    display: flex;
     position: relative;
+    cursor: pointer;
     width: 100%;
-    max-width: 75px;    
-    /* height: 100%; */
+    max-width: 224px;
     margin-top: 22px;
     margin-left: 15px;
-    margin-right: 0px;
+}
+#Logo{
+    position: relative;
+    cursor: pointer;
+    width: 100%;
+    max-width: 75px;
 }
 #Logo-txt{
     position: relative;
+    cursor: pointer;
     width: 100%;
     max-width: 130px;
     font-family: 'Poppins';
@@ -46,7 +53,7 @@ header{
     line-height: 25px;
     color: #1E1E1E;
     margin-left: 19px;
-    margin-top: 38px;
+    margin-top: 16px;
 }
 #Menu-Mobile{
     display: none;
@@ -83,6 +90,7 @@ header{
 #User{
     /* position: relative; */
     width: 31px;
+    cursor: pointer;
     /* height: 31px; */
     /* margin-top: 35px; */
     margin-right: 5px;
@@ -90,6 +98,7 @@ header{
 #User-txt{
     /* position: relative; */
     font-family: 'Poppins';
+    cursor: pointer;
     font-weight: 400;
     font-size: 1.8rem;
     /* line-height: 27px;
@@ -100,6 +109,7 @@ header{
 #Fav{
     /* position: relative; */
     width: 100%;
+    cursor: pointer;
     /* height: 100%; */
     max-width: 32px;
     /* margin-top: 35px;
@@ -108,6 +118,7 @@ header{
 }
 #Sacola{
     /* position: relative; */
+    cursor: pointer;
     width: 100%;
     height: 100%;
     max-width: 43px;
@@ -424,11 +435,9 @@ header{
     margin: auto;
     max-width: 1200px;
     width: 85%;
-    /* flex-wrap: wrap; */ /* Usar no media query */
 }
 .Blog-Img img{
     max-width: 350px;
-    /* width: 100%; */
     border-radius: 5px;
     margin-right: 75px;
 }
@@ -483,7 +492,6 @@ header{
     width: 85%;
     gap: 8px;
     display: inline-flex;
-    /* flex-wrap: wrap; */
 }
 .Form-Tittle{
     color: #000;
@@ -521,7 +529,6 @@ header{
     font-family: 'Poppins';
     font-size: 1.8rem;
     font-weight: 700;
-    /* line-height: 2.7rem; */
     transition: 600ms;
     border-radius: 5px;
     cursor: pointer;
@@ -565,7 +572,6 @@ header{
         font-weight: 700;
         line-height: 5.2rem;
         text-align: center;
-        /* margin-bottom: 32px; */
         margin: 0 10px 32px;
     }
     .Blog-TXT p{
@@ -590,24 +596,29 @@ header{
 @media (max-width: 655px){
     .header-content{
         flex-wrap: wrap;
+        align-items: center;
     }
     .header-content-right{
         display: none;
     }
-    #Logo{
+    .Logo-Group{
+        scale: 0.8;
+        margin-left: 5px;
+    }
+    /* #Logo{
         margin-left: auto;
     }
     #Logo-txt{
         margin-right: auto;
-    }
+    } */
     #Menu-Mobile{
         display: block;
         right: 0;
-        margin: 34px auto 0;
+        margin: 20px auto 0;
         padding: 5px;
         background: none;
         font-family: 'Poppins';
-        font-size: 1.6rem;
+        font-size: 1.8rem;
         font-weight: 500;
     }
     #Searchbar{
@@ -623,11 +634,14 @@ header{
         margin: 0 auto 10px;
         width: 100%;
         top: 100px;
-        text-align: center;
+        text-align: right;
     }
     header.menu-active .nav-categorias li{
         padding: 5px;
-        width: 100vw;
+        width: 90vw;
+    }
+    header.menu-active .nav-categorias a {
+        font-size: 2rem;
     }
     header.menu-active #Searchbar {
         display: none;
@@ -640,7 +654,14 @@ header{
         margin-top: 15px;
         margin-bottom: 15px;
         padding: 0;
+        scale: 1.2;
     }
+    #User-txt{
+        display: none;
+    }
+    #User, #Fav{
+        margin-right: 16px;
+    }    
     .sliders{
         display: none;
     }
@@ -652,6 +673,7 @@ header{
     .Form-Container{
         text-align: center;
         margin-top: 68px;
+        
     }
     .Form-Wrapper{
         justify-content: center;
@@ -661,9 +683,10 @@ header{
         gap: 8px;
         display: inline-flex;
         flex-wrap: wrap;
+        gap: 15px;
     }
     .Form-Tittle{
-        margin: 0 10px 32px;
+        margin: 0 10px 15px;
     }
 }
 @media (max-width: 450px){
@@ -690,6 +713,5 @@ header{
         z-index: 1;
         opacity: 0.05;
         transition: 600ms;
-        /* scale: 50%; */
     }
 }
