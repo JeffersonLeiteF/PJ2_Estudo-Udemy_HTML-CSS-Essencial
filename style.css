@@ -613,7 +613,7 @@ header{
         margin-right: auto;
     } */
     #Menu-Mobile{
-        display: block;
+        display: flex;
         right: 0;
         margin: 20px 0 0;
         padding: 5px;
@@ -622,6 +622,33 @@ header{
         font-size: 1.8rem;
         font-weight: 500;
         margin-right: 19px;
+        gap: 1rem;
+    }
+    #Hamburger{
+        margin-top: .6rem;
+        display: block;
+        width: 20px;
+        border-top: 2px solid;
+    }
+    #Hamburger::after ,#Hamburger::before{
+        content: '';
+        display: block;
+        width: 20px;
+        height: 2px;
+        background: currentColor;
+        margin-top: 5px;
+        transition: 300ms;
+        position: relative;
+    }
+    header.menu-active #Hamburger{
+        border-top-color: transparent;
+    }
+    header.menu-active #Hamburger::before{
+        transform: rotate(135deg);
+    }
+    header.menu-active #Hamburger::after{
+        transform: rotate(-135deg);
+        top: -7px;
     }
     #Searchbar{
         width: 85%;
@@ -718,5 +745,18 @@ header{
         z-index: 1;
         opacity: 0.05;
         transition: 600ms;
+    }
+}
+@media (max-width: 300px){
+    .header-content{
+        padding-left: 0;
+    }
+    .Logo-Group{
+        scale: 0.6;
+        margin: .2rem 0 0;
+    }
+    #Menu-Mobile{
+        scale: 0.8;
+        margin: 0;
     }
 }
