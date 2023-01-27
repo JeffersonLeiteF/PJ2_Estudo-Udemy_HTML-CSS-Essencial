@@ -604,6 +604,7 @@ header{
     .Logo-Group{
         scale: 0.8;
         margin-left: 5px;
+        margin-right: auto;
     }
     /* #Logo{
         margin-left: auto;
@@ -614,12 +615,13 @@ header{
     #Menu-Mobile{
         display: block;
         right: 0;
-        margin: 20px auto 0;
+        margin: 20px 0 0;
         padding: 5px;
         background: none;
         font-family: 'Poppins';
         font-size: 1.8rem;
         font-weight: 500;
+        margin-right: 19px;
     }
     #Searchbar{
         width: 85%;
