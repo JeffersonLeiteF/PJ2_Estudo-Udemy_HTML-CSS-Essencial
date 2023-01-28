@@ -10,10 +10,9 @@ function nextImage(){
     count++;
     if(count>3){
         count = 1;
-    }    
+    }
 document.getElementById("radio"+count).checked = true;
 }
-
 //Animação automática dos banners mobile
 let countm = 1;
 document.getElementById("radio-m1").checked = true;
