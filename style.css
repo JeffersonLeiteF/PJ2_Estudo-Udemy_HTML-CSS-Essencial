@@ -615,7 +615,7 @@ header{
     #Menu-Mobile{
         display: flex;
         right: 0;
-        margin: 20px 0 0;
+        /* margin: 2rem 0 0; */
         padding: 5px;
         background: none;
         font-family: 'Poppins';
@@ -625,7 +625,7 @@ header{
         gap: 1rem;
     }
     #Hamburger{
-        margin-top: .6rem;
+        /* margin-top: .6rem; */
         display: block;
         width: 20px;
         border-top: 2px solid;

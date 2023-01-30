@@ -1,5 +1,5 @@
 //Animação automática dos banners
-let count = 1;
+/* let count = 1;
 document.getElementById("radio1").checked = true;
 
 setInterval( function(){
@@ -12,7 +12,7 @@ function nextImage(){
         count = 1;
     }
 document.getElementById("radio"+count).checked = true;
-}
+} */
 //Animação automática dos banners mobile
 let countm = 1;
 document.getElementById("radio-m1").checked = true;
@@ -28,7 +28,21 @@ function nextImageM(){
     }
 document.getElementById("radio-m"+countm).checked = true;
 }
+//Animação automática dos banners
+let count = 1;
+document.getElementById("radio1").checked = true;
 
+setInterval( function(){
+    nextImage();
+}, 10000)
+
+function nextImage(){
+    count++;
+    if(count>3){
+        count = 1;
+    }
+document.getElementById("radio"+count).checked = true;
+}
 //Animação slider dos produtos
 var carousel = document.querySelector(".Carrossel");
 var next = document.querySelector(".next");
