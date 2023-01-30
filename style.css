@@ -319,25 +319,17 @@ header{
 /* Carrossel de Produtos */
 .Carrossel{
     position: relative;
-    /* width: 1000px; */
     margin: 0 auto;
     gap: 40px;
     display: flex;
-    /* justify-content: center; */
     overflow: hidden;
     transition-property: scroll-left;
     transition-duration: 600ms;
     transition-timing-function: ease-in-out;
-    /* z-index: 0; */
-   /*  padding-bottom: 27px; */
 }
 .cProduct{
-    /* max-width: 250px;
-    max-height: 447px; */
     width: 200px;
     height: 447px;
-    /* padding: 50px; */
-    /* margin: 0 40px; */
     display: inline-block;
 }
 .cProduct:first-child{
@@ -362,14 +354,12 @@ header{
     text-align: left;
     font-weight: 400;
     text-decoration: underline;
-    /* margin-top: -5px; */
 }
 .pPrice{
     font-family: 'Poppins';
     font-size: 3rem;
     text-align: left;
     font-weight: 700;
-    /* margin-top: -10px; */
 }
 .pParcel{
     font-family: 'Poppins';
@@ -377,7 +367,6 @@ header{
     text-align: left;
     font-weight: 400;
     margin-bottom: 16px;
-    /* margin-top: -10px; */
 }
 .pCTA{
     background-color: #00903E;
@@ -389,7 +378,6 @@ header{
     text-decoration: none;
     border-radius: 5px;
     transition: 600ms ease-in-out;
-    /* margin-bottom: 15px; */
 }
 .pCTA:hover{
     background-color: #005022;
@@ -421,8 +409,6 @@ header{
 .Blog-Container{
     margin-top: 68px;
     background-color: #D9D9D9;
-    /* max-height: 572px;
-    height: 100%; */
     width: 100%;
     padding-top: 86px;
     padding-bottom: 86px;
@@ -606,16 +592,10 @@ header{
         margin-left: 5px;
         margin-right: auto;
     }
-    /* #Logo{
-        margin-left: auto;
-    }
-    #Logo-txt{
-        margin-right: auto;
-    } */
     #Menu-Mobile{
         display: flex;
-        right: 0;
-        /* margin: 2rem 0 0; */
+        /* right: 0; */
+        margin: 2rem 0 0;
         padding: 5px;
         background: none;
         font-family: 'Poppins';
@@ -625,7 +605,7 @@ header{
         gap: 1rem;
     }
     #Hamburger{
-        /* margin-top: .6rem; */
+        margin-top: .4rem;
         display: block;
         width: 20px;
         border-top: 2px solid;
