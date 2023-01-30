@@ -195,7 +195,7 @@ header{
   }
 }
 
-.manual-btn1, .manual-btn2, .manual-btn3{
+.manual-btn1-d, .manual-btn2-d, .manual-btn3-d{
     border-radius: 100px;
     cursor: pointer;
     background-color: #d9d9d9;
@@ -203,28 +203,28 @@ header{
     height: 22px;
     transition: 600ms;
 }
-.manual-btn1, .manual-btn2, .manual-btn3:not(:last-child){
+.manual-btn1-d, .manual-btn2-d, .manual-btn3-d:not(:last-child){
     margin-right: 17px;
 }
-.manual-btn1:hover, .manual-btn2:hover, .manual-btn3:hover{
+.manual-btn1-d:hover, .manual-btn2-d:hover, .manual-btn3-d:hover{
     background-color: #3b3b3b;
 }
-#radio1:checked ~ .first{
+#radio-d1:checked ~ .first{
     margin-left: 0;
 }
-#radio2:checked ~ .first{
+#radio-d2:checked ~ .first{
     margin-left: -25%;
 }
-#radio3:checked ~ .first{
+#radio-d3:checked ~ .first{
     margin-left: -50%;
 }
-#radio1:checked ~ .navigation-manual .manual-btn1{
+#radio-d1:checked ~ .navigation-manual .manual-btn1-d{
     background-color: #1E1E1E;
 }
-#radio2:checked ~ .navigation-manual .manual-btn2{
+#radio-d2:checked ~ .navigation-manual .manual-btn2-d{
     background-color: #1E1E1E;
 }
-#radio3:checked ~ .navigation-manual .manual-btn3{
+#radio-d3:checked ~ .navigation-manual .manual-btn3-d{
     background-color: #1E1E1E;
 }
 /* Banners Mobile */
