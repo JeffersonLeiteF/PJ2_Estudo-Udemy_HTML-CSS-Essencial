@@ -1,4 +1,4 @@
-//Animação automática dos banners
+/* //Animação automática dos banners
 let countD = 1;
 document.getElementById("radio-d1").checked = true;
 
@@ -27,7 +27,7 @@ function nextImageM(){
         countM = 1;
     }
 document.getElementById("radio-m"+countM).checked = true;
-}
+} */
 //Animação slider dos produtos
 var carousel = document.querySelector(".Carrossel");
 var next = document.querySelector(".next");
