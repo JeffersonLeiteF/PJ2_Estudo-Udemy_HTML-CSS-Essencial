@@ -1,0 +1,10 @@
+.banner-categoria{
+    margin: 35px auto 0;
+    max-width: 1200px;
+    width: 85%;
+}
+.banner-categoria img{
+    max-width: 1200px;
+    width: 100%;
+    border-radius: 5px;
+}
